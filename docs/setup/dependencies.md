@@ -72,7 +72,13 @@ dependencies {
     <dependency>
         <groupId>net.minestom</groupId>
         <artifactId>minestom-snapshots</artifactId>
-        <version>// version</version>
+        <version>// Version</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-depchain</artifactId>
+            </exclusion>
+        </exclusions>
     </dependency>
 </dependencies>
 ```
@@ -80,6 +86,6 @@ dependencies {
 :::
 <LatestVersion />
 
-When using Maven it is recommended to exclude the artifact `shrinkwrap-resolver-depchain` from the group `org.jboss.shrinkwrap.resolver` as otherwise resolving the dependencies will fail. Shrinkwrap can be added as a separate dependency if needed without issues to restore its functionality.
+When using Maven it is recommended to exclude the artifact `shrinkwrap-resolver-depchain` from the group `org.jboss.shrinkwrap.resolver` as seen in the example above, otherwise resolving the dependencies will fail. Shrinkwrap can be added as a separate dependency if needed without issues to restore its functionality.
 
 A list of versions can be found at [https://jitpack.io/#Minestom/Minestom](https://jitpack.io/#Minestom/Minestom).

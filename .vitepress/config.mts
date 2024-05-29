@@ -83,6 +83,7 @@ export default defineConfig({
               items: [
                 { text: "Anvil Loader", link: "/docs/world/anvilloader" },
                 { text: "Lighting", link: "/docs/world/lightloader" },
+                { text: "Polar", link: "/docs/world/polar" },
               ],
             },
             { text: "Blocks", link: "/docs/world/blocks" },
